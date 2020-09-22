@@ -10,3 +10,4 @@ def decimal_translator(number, base):
     for i in range(len(nums)):
         answer += base ** i * nums[i]
     return answer
+print(decimal_translator(10, 2))
