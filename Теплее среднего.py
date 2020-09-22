@@ -1,4 +1,4 @@
-def warmer_day(temperatures):
+def warmer_than_average(temperatures):
     days = []
     for i in temperatures:
         for j in i:
@@ -7,4 +7,4 @@ def warmer_day(temperatures):
     for i in range(len(days)):
         if days[i] > average:
             return i + 1
-print(warmer_day(input()))
+print(warmer_than_average(input()))
