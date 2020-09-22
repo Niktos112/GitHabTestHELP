@@ -1,20 +1,13 @@
-def triangle(item):
-    eng = 'abcdefghijklmnopqrstuvwxyz'
-    letters = []
-    for i in eng:
-        letters.append(i)
-    count = 0
-    if item.isalpha():
-        for i in item.lower():
-            count += letters.index(i) + 1
-    else:
-        count = int(item)
-    n = 1
-    result = 1
-    while result < count:
-        n += 1
-        result = n * (n + 1) / 2
-    if result == count:
-        return n
-    else:
-        return False
+def password_level(password):
+    if len(password) < 6:
+        return 'Недопустимый пароль'
+    elif password.isdigit() or (password.isalpha() and
+                                (password.islower() or password.isupper())):
+        return 'Ненадежный пароль'
+    elif (password.isalpha() and not password.islower()
+          and not password.isupper()) or\
+         (password.isalnum() and (password.isupper() or password.islower())):
+        return 'Слабый пароль'
+    elif password.isalnum() and not \
+            password.islower() and not password.isupper():
+        return 'Надежный пароль'
