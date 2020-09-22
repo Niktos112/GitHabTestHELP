@@ -28,3 +28,4 @@ def check_pin_code(pinCode):
         return 'Некорректен'
     if first and second and third:
         return 'Корректен'
+print(check_pin_code(input()))
