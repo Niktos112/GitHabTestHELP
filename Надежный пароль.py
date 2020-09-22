@@ -11,3 +11,4 @@ def password_level(password):
     elif password.isalnum() and not \
             password.islower() and not password.isupper():
         return 'Надежный пароль'
+print(password_level(input()))
