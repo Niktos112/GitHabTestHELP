@@ -1,4 +1,4 @@
-def check_pin(pinCode):
+def check_pin_code(pinCode):
     nums = pinCode.split('-')
     first = True
     second = True
