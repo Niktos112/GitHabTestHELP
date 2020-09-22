@@ -1,4 +1,4 @@
-def triangle(item):
+def triangle_nums(item):
     eng = 'abcdefghijklmnopqrstuvwxyz'
     letters = []
     for i in eng:
