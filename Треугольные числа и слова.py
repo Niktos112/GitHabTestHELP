@@ -1,4 +1,4 @@
-def triangle_nums(item):
+def triangle_nums_and_words(item):
     eng = 'abcdefghijklmnopqrstuvwxyz'
     letters = []
     for i in eng:
@@ -18,3 +18,4 @@ def triangle_nums(item):
         return n
     else:
         return False
+print(triangle_nums_and_words(input()))
